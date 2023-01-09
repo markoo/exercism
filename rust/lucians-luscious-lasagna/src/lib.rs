@@ -1,17 +1,17 @@
-const expected: i32 = 40;
+const EXPECTED: i32 = 40;
 pub fn expected_minutes_in_oven() -> i32 {
-    expected
+    EXPECTED
 }
 
 pub fn remaining_minutes_in_oven(actual_minutes_in_oven: i32) -> i32 {
-    let remaining = expected - actual_minutes_in_oven;
+    let remaining = EXPECTED - actual_minutes_in_oven;
     return remaining;
 
 }
 
-const pr_layer: i32 = 2;
+const PR_LAYER: i32 = 2;
 pub fn preparation_time_in_minutes(number_of_layers: i32) -> i32 {
-    let preparation = number_of_layers * pr_layer;
+    let preparation = number_of_layers * PR_LAYER;
     return preparation;
 }
 
